@@ -1,9 +1,20 @@
-- tab: "Testen"
-  testcases:
-  - stdin: |-
-       1
-       0
-       0
-   stdout: "De coördinaat van de top van de grafiek van f is: T(0;0)"
+testplan:
+  - name: Testcase 1
+    description: Test positieve invoerwaarden
+    steps:
+      - action: Voer de code uit met a=1, b=2, c=1
+        expected: De uitvoer moet "De coördinaat van de top van de grafiek van f is: T(-1.0 ; 0.25)" zijn
+  - name: Testcase 2
+    description: Test negatieve invoerwaarden
+    steps:
+      - action: Voer de code uit met a=-1, b=-2, c=-1
+        expected: De uitvoer moet "De coördinaat van de top van de grafiek van f is: T(1.0 ; -0.25)" zijn
+  - name: Testcase 3
+    description: Test een nulwaarde voor a
+    steps:
+      - action: Voer de code uit met a=0, b=2, c=1
+        expected: De uitvoer moet een foutmelding zijn omdat a niet nul mag zijn
+ 
+
 
   
