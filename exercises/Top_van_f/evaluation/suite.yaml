@@ -1,0 +1,5 @@
+- tab: "Top_van_f"
+  testcases:
+    - expression: "Top_van_f(x^2)"
+      return: 0
+      
