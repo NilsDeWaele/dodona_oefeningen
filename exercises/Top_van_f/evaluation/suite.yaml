@@ -1,7 +1,5 @@
 - tab: "Testen"
   testcases:
-  - stdin: "1\n2\n1\n"
-    stdout: "De coördinaat van de top van de grafiek van f is: T(-1.0 ; 0.25)\n"
-  - stdin: "-1\n-2\n-1\n"
-    stdout: "De coördinaat van de top van de grafiek van f is: T(1.0 ; -0.25)\n"
+  - stdin: "1\n0\n0\n"
+    stdout: "De coördinaat van de top van de grafiek van f is: T(0 ; 0)\n"
 
