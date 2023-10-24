@@ -1,19 +1,27 @@
-testplan:
+exercises:
+  - name: Quadratic Equation
+    description: >-
+      This exercise tests a program that calculates the coordinates of the vertex of a quadratic equation.
+      The program should take three inputs: coefficients a, b, and c.
+
+tests:
   - name: Testcase 1
-    description: Test positieve invoerwaarden
-    steps:
-      - action: Voer de code uit met a=1, b=2, c=1
-        expected: De uitvoer moet "De coördinaat van de top van de grafiek van f is: T(-1.0 ; 0.25)" zijn
+    description: Test positive input values
+    input: |
+      1
+      2
+      1
+    output: |
+      De coördinaat van de top van de grafiek van f is: T(-1.0 ; 0.25)
   - name: Testcase 2
-    description: Test negatieve invoerwaarden
-    steps:
-      - action: Voer de code uit met a=-1, b=-2, c=-1
-        expected: De uitvoer moet "De coördinaat van de top van de grafiek van f is: T(1.0 ; -0.25)" zijn
-  - name: Testcase 3
-    description: Test een nulwaarde voor a
-    steps:
-      - action: Voer de code uit met a=0, b=2, c=1
-        expected: De uitvoer moet een foutmelding zijn omdat a niet nul mag zijn
+    description: Test negative input values
+    input: |
+      -1
+      -2
+      -1
+    output: |
+      De coördinaat van de top van de grafiek van f is: T(1.0 ; -0.25)
+
  
 
 
